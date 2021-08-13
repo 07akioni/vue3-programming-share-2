@@ -1,12 +1,19 @@
+html:not(.dark) {
+  --inline-color: rgb(24, 24, 24);
+}
+
+html.dark {
+  --inline-color: white;
+}
+
 #slide-content {
   color: rgba(255, 255, 255);
   background-color: #1C1F2F;
 }
 
-/* 
 :not(pre) > code {
-  color: rgb(24, 24, 24);
-} */
+  color: var(--inline-color);
+}
 
 .slidev-layout h1 + p {
   opacity: 0.8;
